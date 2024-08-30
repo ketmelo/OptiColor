@@ -1,11 +1,26 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
+
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'zen-dots': ['"Zen Dots"', 'sans-serif'],
+        'aoboshi': ['Aoboshi One', 'sans-serif'],
+        'inria': ['Inria Sans','sans-serif'],
+      },
+      colors:{
+      'fundo-bg': '#0D0D0D',
+      'bg-container': '#0C2B3240' ,
+      'verde': '#17625b',
+      'verdinho': '#4fc3a1',
+      'azulEscuro': '#0c2b32',
+      'azul': '#041c34',
+      'azulzao': '#091116',
+      }
+    },
   },
   plugins: [],
 }
